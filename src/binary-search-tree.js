@@ -6,7 +6,7 @@ const { Node } = require('../extensions/list-tree.js');
 * Implement simple binary search tree according to task description
 * using Node from extensions
 */
-module.exports = class BinarySearchTree {
+class BinarySearchTree {
   constructor() {
     this.r = null;
   }
@@ -101,5 +101,8 @@ module.exports = class BinarySearchTree {
     while(max.right !== null) max = max.right;
     return max.data;
   }
-
 }
+
+module.exports = {
+  BinarySearchTree
+};
